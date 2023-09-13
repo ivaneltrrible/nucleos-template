@@ -36,7 +36,7 @@ img {
     max-width: 100%;
     display: block;
 }
-.contenedor {
+[class$="__contenedor"] {
     max-width: 120rem;
     margin: 0 auto;
     width: 90%;
@@ -64,11 +64,12 @@ img {
         background-size: 86rem;
     }
 }
-.header__contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
-    width: 90%;
+@media (min-width: 1600px) {
+    .header {
+        background-size: 137rem;
+    }
 }
+
 @media (min-width: 768px) {
     .header__barra {
         display: flex;
@@ -158,4 +159,38 @@ img {
     .navegacion__link {
         color: var(--blanco);
     }
+}
+/* 
+    nucleus section
+*/
+.nucleus {
+    margin-top: 3rem;
+}
+.nucleus__heading {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.nucleus__grid {
+    display: flex;
+    flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+    .nucleus__grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 5rem;
+        align-items: center;
+    }
+}
+
+/* 
+    Listado section
+*/
+.listado {
+
+}
+.listado__elemento {
+    box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
+    padding: 1rem 3rem;
+    margin-bottom: 1rem;
 }
