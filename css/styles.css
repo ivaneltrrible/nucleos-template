@@ -174,6 +174,7 @@ img {
     display: flex;
     flex-direction: column-reverse;
 }
+
 @media (min-width: 768px) {
     .nucleus__grid {
         display: grid;
@@ -191,6 +192,19 @@ img {
 }
 .listado__elemento {
     box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
-    padding: 1rem 3rem;
-    margin-bottom: 1rem;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    transition: transform 0.4s ease-in;
+}
+.listado__elemento:hover {
+    transform: scale(1.1);
+}
+.listado__heading {
+    font-size: 3rem;
+    margin: 0;
+    color: var(--primario);
+}
+.listado__texto {
+    margin: 0;
+    font-size: 1.5rem;
 }
